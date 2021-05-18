@@ -4,6 +4,7 @@
     "description": "VSCode extension MMIX assembly language syntax highlighting.",
     "version": "1.0.0",
     "publisher": "Porrapat",
+    "icon": "images/icon.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/Porrapat/vscode-mmix"
