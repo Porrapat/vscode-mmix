@@ -1,0 +1,35 @@
+{
+    "name": "vscode-mmix",
+    "displayName": "VSCode MMIX Syntax Highlighter",
+    "description": "VSCode extension MMIX assembly language syntax highlighting.",
+    "version": "1.0.0",
+    "publisher": "porrapat",
+    "engines": {
+      "vscode": "^1.5.0"
+    },
+    "categories": [
+      "Programming Languages"
+    ],
+    "contributes": {
+      "languages": [
+        {
+          "id": "mmix",
+          "aliases": [
+            "MMIX",
+            "mmix"
+          ],
+          "extensions": [
+            ".mms"
+          ],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "mmix",
+          "scopeName": "source.mmix",
+          "path": "./syntaxes/mmix.tmLanguage.json"
+        }
+      ]
+    }
+  }

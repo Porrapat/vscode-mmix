@@ -1,0 +1,62 @@
+{
+    "scopeName": "source.mmix",
+    "name": "MMIX",
+    "fileTypes": [
+        "mms"
+    ],
+    "patterns": [
+        {
+            "match": "^\\b([A-Za-z]+[0-9]*|\\d+H)\\b\\s",
+            "name": "entity.name.function.mmix"
+        },
+        {
+            "match": "(//|%|#\\s).*$",
+            "name": "comment.mmix"
+        },
+        {
+            "match": "\\$\\d{1,3}\\b",
+            "name": "storage.other.register.mmix"
+        },
+        {
+            "match": "\\brA|rB|rC|rD|rE|rF|rG|rH|rI|rJ|rK|rL|rM|rN|rO|rP|rQ|rR|rS|rT|rU|rV|rW|rX|rY|rZ|rBB|rTT|rWW|rXX|rYY|rZZ\\b",
+            "name": "storage.other.special.register.mmix"
+        },
+        {
+            "match": "-?[0-9]+\\b",
+            "name": "constant.numeric.dec.mmix"
+        },
+        {
+            "match": "(#|0x)[0-9a-fA-F_]+\\b",
+            "name": "constant.numeric.hex.mmix"
+        },
+        {
+            "match": "@",
+            "name": "constant.numeric.at.sign.mmix"
+        },
+        {
+            "match": "\\s+(LOC|GREG|IS|BYTE|WYDE|TETRA|OCTA)\\b",
+            "name": "keyword.control.mnemonic.mmix"
+        },
+        {
+            "match": "(BYTE|WYDE|TETRA|OCTA)\\b",
+            "name": "keyword.control.mnemonic2.mmix"
+        },
+        {
+            "match": "\\s+(TRAP|FCMP|FUN|FEQL|FADD|FIX|FSUB|FIXU|FLOT|FLOTU|SFLOT|SFLOTU|FMUL|FCMPE|FUNE|FEQLE|FDIV|FSQRT|FREM|FINT|MUL|MULU|DIV|DIVU|ADD|ADDU|SUB|SUBU|2ADDU|4ADDU|8ADDU|16ADDU|CMP|CMPU|NEG|NEGU|SL|SLU|SR|SRU|BN|BZ|BP|BOD|BNN|BNZ|BNP|BEV|PBN|PBZ|PBP|PBOD|PBNN|PBNZ|PBNP|PBEV|CSN|CSZ|CSP|CSOD|CSNN|CSNZ|CSNP|CSEV|ZSN|ZSZ|ZSP|ZSOD|ZSNN|ZSNZ|ZSNP|ZSEV|LDA|LDB|LDBU|LDW|LDWU|LDT|LDTU|LDO|LDOU|LDSF|LDHT|CSWAP|LDUNC|LDVTS|PRELD|PREGO|GO|STB|STBU|STW|STWU|STT|STTU|STO|STOU|STSF|STHT|STCO|STUNC|SYNCD|PREST|SYNCID|PUSHGO|OR|ORN|NOR|XOR|AND|ANDN|NAND|NXOR|BDIF|WDIF|TDIF|ODIF|MUX|SADD|MOR|MXOR|SET|SETH|SETMH|SETML|SETL|INCH|INCMH|INCML|INCL|ORH|ORMH|ORML|ORL|ANDNH|ANDNMH|ANDNML|ANDNL|JMP|PUSHJ|GETA|PUT|POP|RESUME|UNSAVE|SYNC|SWYM|GET|TRIP)\\b",
+            "name": "keyword.control.opcode.mmix"
+        },
+        {
+            "match": "(Text_Segment|Data_Segment|Pool_Segment|Stack_Segment)\\b",
+            "name": "string.function.segment.mmix"
+        },
+        {
+            "match": "(FOpen|FClose|Fread|Fgets|Fgetws|Fwrite|Fputs|Fputws|Fseek|Ftell|TextRead|TextWrite|BinaryRead|BinaryWrite|BinaryReadWrite|StdIn|StdOut|Halt)\\b",
+            "name": "string.function.special.mmix"
+        },
+        {
+            "name": "string.quoted.mmix",
+            "begin": "\"",
+            "end": "\""
+        }
+    ]
+}
