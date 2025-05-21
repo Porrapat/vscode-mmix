@@ -2,7 +2,7 @@
     "name": "vscode-mmix",
     "displayName": "VSCode MMIX Syntax Highlighter",
     "description": "VSCode extension MMIX assembly language syntax highlighting.",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "publisher": "Porrapat",
     "icon": "images/icon.png",
     "repository": {
@@ -50,7 +50,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.100.0",
+    "@types/vscode": "^1.0.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
