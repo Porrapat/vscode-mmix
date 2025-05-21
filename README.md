@@ -47,8 +47,7 @@ Go to [MMIX Homepage](http://mmix.cs.hm.edu/), or I will write this more easy in
 
 ## Roadmap - What to do next
 
-* Fix bug on the issue
-* MIX (Old language of MMIX) Syntax Higlighter
+* MIX (Old language of MMIX) Syntax Higlighter (There are someone build there!)
 * More Easy MMIX IDE Feature like Code Formatting, Auto Complete, Code Snippet Template
 * MMIX Visual Debugger on VSCode that can run on many platflom
 * MMIX Visual Debugger on Web, that you can open it by any web browser
