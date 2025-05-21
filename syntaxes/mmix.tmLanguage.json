@@ -10,7 +10,7 @@
             "name": "entity.name.function.mmix"
         },
         {
-            "match": "(//|%|#\\s).*$",
+            "match": "(//|;|%|#\\s).*$",
             "name": "comment.mmix"
         },
         {
