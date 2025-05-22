@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to the **vscode-mmix** extension will be documented in this file.
 
+## [1.1.1] – 2025-05-22
+### Added
+- Fix bug that has labels highlighted in the comment.
+
 ## [1.1.0] – 2025-05-21
 ### Added
 - Semantic token support to highlight labels (e.g., `Main`, `FLoop`, `DLoop`, `1H`, `2H`, `3H`).

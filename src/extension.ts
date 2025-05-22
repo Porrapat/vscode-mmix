@@ -45,8 +45,7 @@ export function activate(context: vscode.ExtensionContext) {
 
             // Escape for regex
             const escaped = Array.from(extendedIdentifiers).map(s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-            const secondPassRegex = new RegExp(`\\b(${escaped.join('|')})\\b`, 'g');
-
+            const secondPassRegex = new RegExp(`(?<!(\/\/|;|%|#\\s).*)\\b(${escaped.join('|')})\\b`, 'g');
             for (let lineNumber = 0; lineNumber < lines.length; lineNumber++) {
               const line = lines[lineNumber];
               let match;
